@@ -2,7 +2,6 @@ package org.example.s32193_2_jaz_kolokwium.logic;
 
 
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -39,6 +38,7 @@ public class Nbp_app_controller {
     public ResponseEntity<String> get_data() {
         return ResponseEntity.ok(nbp_app_service.get_data().getBody());
     }
+
 
     @Tag(name = "pobranie danych dla konkretnej waluty")
     @Operation(
